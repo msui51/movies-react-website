@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import movie_icon from '../assets/icons8-logo-50.png';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Nav() {
     const location = useLocation()
     const [home, setHome] = useState(false);
-    console.log(location.pathname);
 
     useEffect(()=>{
         if(location.pathname === '/'){
@@ -29,19 +29,18 @@ function Nav() {
                     </div>
                     <ul className="nav__links">
                         <li className="nav__list">
-                            <a  className={home ? 
-                                "nav__light" 
-                                : "nav__list--link nav__list--link-underline nav__light"}  
-                                href="">
-                                Home
-                            </a>
+                            <Link to='/' className={home ? 
+                                    "nav__light" 
+                                    : "nav__list--link nav__list--link-underline nav__light"} >
+                                    Home                            
+                            </Link>
                         </li>
                         <li className="nav__list">
                             <a  className="nav__list--link" href="">
                                 <button className={home ? 
                                     "button nav__button--light"
                                     : "button nav__button"}
-                                    onclick="onAlert()">
+                                    onClick="onAlert()">
                                     CONTACT
                                 </button>
                             </a>
