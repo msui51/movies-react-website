@@ -5,14 +5,15 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
     const location = useLocation()
-    const [home, setHome] = useState(false);
+    const [home, setHome] = useState(true);
 
     useEffect(()=>{
-        if(location.pathname === '/'){
-            setHome(true);
-        }else{
+        if(location.pathname !== '/'){
             setHome(false);
+        }else{
+            setHome(true);
         }
+        console.log(location.pathname)
     }, [location.pathname])
 
   return (
@@ -39,8 +40,7 @@ function Nav() {
                             <a  className="nav__list--link" href="">
                                 <button className={home ? 
                                     "button nav__button--light"
-                                    : "button nav__button"}
-                                    onClick="onAlert()">
+                                    : "button nav__button"}>
                                     CONTACT
                                 </button>
                             </a>
