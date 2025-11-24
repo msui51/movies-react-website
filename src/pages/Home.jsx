@@ -29,7 +29,7 @@ function Home({fetchMovieData}) {
                         onChange={(event)=>setQuery(event.target.value)} 
                         className="input" 
                         placeholder="Search by Title, Year or Keyword" />
-                    <button type='submit' className="button nav__button--light">
+                    <button type='submit' className="button home__search--button">
                         <FontAwesomeIcon className='search__logo' icon="fa-solid fa-magnifying-glass" />
                     </button>
                 </form>

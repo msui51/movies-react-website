@@ -5,42 +5,36 @@ import { Link } from 'react-router-dom';
 
 function Nav() {
     const location = useLocation()
-    const [home, setHome] = useState(true);
+    const [light, setLight] = useState(true);
 
     useEffect(()=>{
-        if(location.pathname !== '/'){
-            setHome(false);
+        if(location.pathname !== '/movies'){
+            setLight(true);
         }else{
-            setHome(true);
+            setLight(false);
         }
         console.log(location.pathname)
     }, [location.pathname])
 
   return (
-                <div className="nav__top">
+                <div className={`nav__top ${light ? 'nav__light' : ''}`}>
                     <div className="nav__logo">
                         <div className="nav__logo--image-wrapper">
                             <img className="nav__img" src={movie_icon} alt=""/>
                         </div>
-                         <p className={home ? 
-                                "nav__light"
-                                : "nav__logo--title"} >
+                         <p className="nav__logo--title" >
                                 Movies
                         </p>                   
                     </div>
                     <ul className="nav__links">
                         <li className="nav__list">
-                            <Link to='/' className={home ? 
-                                    "nav__light" 
-                                    : "nav__list--link nav__list--link-underline nav__light"} >
+                            <Link to='/' className="nav__list--link nav__list--link-underline" >
                                     Home                            
                             </Link>
                         </li>
                         <li className="nav__list">
                             <a  className="nav__list--link" href="">
-                                <button className={home ? 
-                                    "button nav__button--light"
-                                    : "button nav__button"}>
+                                <button className="button nav__button">
                                     CONTACT
                                 </button>
                             </a>
