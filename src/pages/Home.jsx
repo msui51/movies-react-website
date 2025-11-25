@@ -17,7 +17,7 @@ function Home({fetchMovieData}) {
 
    
   return (
-    <div className="column">
+    <div className="column home__column">
         <div className='row'>
             <Nav/>
             <div className="home__title--wrapper">

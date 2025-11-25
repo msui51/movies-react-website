@@ -12,8 +12,8 @@ function Movie({movies}) {
                     <div class="movie" key={movie.imdbID}>
                         <div class="movie__top">
                                 <img src={movie.Poster} alt="" class="movie__img"/>
-                                <div class="movie__slide--wrapper"></div>
                                 <Link to={`/movies/${movie.imdbID}`} class="movie__link">
+                                <div class="movie__slide--wrapper"></div>
                                 <div class="movie__slide">More Info
                                     <FontAwesomeIcon className='arrow__right' icon="fa-solid fa-arrow-right" />
                                 </div>
