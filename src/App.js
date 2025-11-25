@@ -19,7 +19,7 @@ function App() {
   
 
   return (
-    <Router>
+    <Router basename='/movies-react-website'>
       <Routes>
         <Route path="/" element={<Home fetchMovieData={fetchMovieData}/>} />
         <Route path="/movies" element={<Movies movies={movies} fetchMovieData={fetchMovieData} setMovies={setMovies} />} />
