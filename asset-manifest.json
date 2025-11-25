@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/msui51/movies-react-website/static/css/main.f888ea5f.css",
-    "main.js": "/msui51/movies-react-website/static/js/main.c87c483f.js",
-    "static/js/453.774811f1.chunk.js": "/msui51/movies-react-website/static/js/453.774811f1.chunk.js",
-    "static/media/movie_theater.jpg": "/msui51/movies-react-website/static/media/movie_theater.c7c4e302e2325ed19bd4.jpg",
-    "index.html": "/msui51/movies-react-website/index.html",
-    "main.f888ea5f.css.map": "/msui51/movies-react-website/static/css/main.f888ea5f.css.map",
-    "main.c87c483f.js.map": "/msui51/movies-react-website/static/js/main.c87c483f.js.map",
-    "453.774811f1.chunk.js.map": "/msui51/movies-react-website/static/js/453.774811f1.chunk.js.map"
+    "main.css": "/movies-react-website/static/css/main.a23e789b.css",
+    "main.js": "/movies-react-website/static/js/main.9cab0e2a.js",
+    "static/js/453.774811f1.chunk.js": "/movies-react-website/static/js/453.774811f1.chunk.js",
+    "static/media/movie_theater.jpg": "/movies-react-website/static/media/movie_theater.c7c4e302e2325ed19bd4.jpg",
+    "index.html": "/movies-react-website/index.html",
+    "main.a23e789b.css.map": "/movies-react-website/static/css/main.a23e789b.css.map",
+    "main.9cab0e2a.js.map": "/movies-react-website/static/js/main.9cab0e2a.js.map",
+    "453.774811f1.chunk.js.map": "/movies-react-website/static/js/453.774811f1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f888ea5f.css",
-    "static/js/main.c87c483f.js"
+    "static/css/main.a23e789b.css",
+    "static/js/main.9cab0e2a.js"
   ]
 }
