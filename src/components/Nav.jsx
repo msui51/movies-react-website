@@ -34,7 +34,7 @@ function Nav() {
                         </li>
                         <li className="nav__list">
                             <a  className="nav__list--link" href="">
-                                <button className="button nav__button">
+                                <button id="is__disabled" className="button nav__button">
                                     CONTACT
                                 </button>
                             </a>

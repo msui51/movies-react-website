@@ -1,10 +1,9 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+
 
 function Movie({movies}) {
-  const {id} = useParams();
 
   return (
     <>

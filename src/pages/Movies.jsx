@@ -51,12 +51,6 @@ function Movies({movies, fetchMovieData, setMovies}) {
   useEffect(() => {
     fetchMovieData(query);
   }, []);
-  //  useEffect(() => {
-  //   if (query && (!movies || movies.length === 0) && fetchMovieData) {
-  //     fetchMovieData(query).catch(err => console.error(err));
-  //   }
-  // }, [query, movies, fetchMovieData]);
- 
 
   return (
     <>

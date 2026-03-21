@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Movies from './pages/Movies';
 import MovieInfo from './pages/MovieInfo';
@@ -19,7 +19,7 @@ function App() {
   
 
   return (
-    <Router basename='/movies-react-website'>
+    <Router>
       <Routes>
         <Route path="/" element={<Home fetchMovieData={fetchMovieData}/>} />
         <Route path="/movies" element={<Movies movies={movies} fetchMovieData={fetchMovieData} setMovies={setMovies} />} />

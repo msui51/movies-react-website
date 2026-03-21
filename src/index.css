@@ -63,6 +63,11 @@ p{
     transform: scale(0.96);
 }
 
+#is__disabled{
+    cursor:not-allowed;
+}
+
+
 
 /* NAV */
 
@@ -431,7 +436,6 @@ select{
 /* Movie Info Page */
 
 .movieInfo__column{
-    height: 100vh;
     background-image: linear-gradient(to right top, #f3dbeb, #fbd8df, #fdd8d0, #f7dac4, #e9debe);
 }
 
@@ -484,12 +488,8 @@ select{
     color: #77797b;
 }
 
-/* .movieData__img--wrapper{
-    width: 400px;
-} */
 
 .movieData__img{
-    /* width: 100%; */
     border-radius: 16px 0 0 16px;
     height: 100%;
 }
@@ -503,9 +503,6 @@ select{
     margin-bottom: 8px;
 }
 
-/* .movieData p{
-    font-size: 18px;
-} */
 
 .movieData__wrapper--top{
     display: flex;
@@ -558,11 +555,6 @@ select{
     margin-right: 4px;
 }
 
-/* .movieData__personal-rating--wrapper{
-    display: flex;
-    align-items: center;
-    margin-top: 16px;
-} */
 
 .movieData__rating--wrapper-btn:hover .movieData__personal-rating--icon{
     color: rgb(87, 153, 239);
@@ -588,6 +580,7 @@ select{
     letter-spacing: 0.5px;
 }
 
+
 .movieData__wrapper--bottom{
     width: 40%;
     display: flex;
@@ -603,3 +596,8 @@ select{
     display: flex;
     gap: 16px;
 }
+
+.movieData__wrapper--top-left{
+    margin-right: 8px;
+}
+
