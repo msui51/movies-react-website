@@ -19,7 +19,7 @@ function MovieInfo({movies}) {
 
   useEffect(()=>{
     fetchMovieDetails(id);
-  },[])
+  },[id])
 
   return (
     <div className='column movieInfo__column'>
